@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eco Quiz - GreenDrop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main class="demo-wrap">
+      <nav class="bottom-nav" aria-label="Primary">
+  <div class="logo">
+          <a href="/index.html">
+            <img src="/logo.png" alt="logo" style="height: 60px;">
+          </a>
+        </div>
+
+        <a class="nav-item is-active" href="/index.html" data-id="home" aria-current="page" style="margin-left: auto;">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5 10v10h5v-6h4v6h5V10"></path>
+          </svg>
+          <span>Home</span>
+        </a>
+    <a class="nav-item" href="#" data-id="notifications">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 9a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"></path>
+        <path d="M9 18a3 3 0 0 0 6 0"></path>
+      </svg>
+      <span>Notifications</span>
+    </a>
+    
+    </a>
+    <div class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle" data-id="language" style="text-decoration: none;">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 0 1 0-16Z"></path>
+          <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path>
+        </svg>
+        <span style="color: var(--muted);">Language</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Français</a></li>
+      </ul>
+    </div>
+    <a class="nav-item is-active" href="#" data-id="profile" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"></path>
+        <path d="M4 20a8 8 0 0 1 16 0"></path>
+      </svg>
+      <span>Profile</span>
+    </a>
+    <a class="nav-item" href="/training.html" data-id="training">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-2H6.5a.5.5 0 0 1 0-1H20v-2H6.5A2.5 2.5 0 0 0 4 19.5z"></path>
+        <path d="M20 2H7.5A2.5 2.5 0 0 0 5 4.5v11A2.5 2.5 0 0 0 7.5 18H20z"></path>
+      </svg>
+      <span>Training</span>
+    </a>
+  </nav>
+    </main>
+
+    <main class="container">
+      <section class="hero" aria-labelledby="quiz-title">
+        <div class="copy">
+          <span class="eyebrow" aria-hidden="true"><a href="/index.html" style="text-decoration: none;">Eco Quiz</a></span>
+          <h1 id="quiz-title">Test Your Eco Knowledge!</h1>
+          <p class="lead">
+            Answer a few fun questions to check your eco-friendly awareness and earn bonus points.
+          </p>
+
+          <form id="eco-quiz" style="margin-top:1.5rem;">
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>1. Which item is NOT recyclable?</strong></p>
+              <label><input type="radio" name="q1" value="a"> Glass Bottle</label><br>
+              <label><input type="radio" name="q1" value="b"> Plastic Bag</label><br>
+              <label><input type="radio" name="q1" value="c"> Aluminum Can</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div style="margin-bottom:1rem;">
+              <p><strong>2. Composting is best for which type of waste?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Wet/Kitchen Waste</label><br>
+              <label><input type="radio" name="q2" value="b"> Metals</label><br>
+              <label><input type="radio" name="q2" value="c"> Glass</label>
+            </div>
+
+        <div style="margin-bottom:1rem;">
+              <p><strong>3.Which bin color is used for dry waste in India?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Green </label><br>
+              <label><input type="radio" name="q2" value="b"> Blue</label><br>
+              <label><input type="radio" name="q2" value="c"> Black</label>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>4. Which bin color is used for wet waste in India?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Green </label><br>
+              <label><input type="radio" name="q2" value="b"> Blue</label><br>
+              <label><input type="radio" name="q2" value="c"> Black</label>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>5. Which bin color is used for hazardous waste in India?</strong></p>
+              <label><input type="radio" name="q2" value="a">  Red</label><br>
+              <label><input type="radio" name="q2" value="b">  Yellow</label><br>
+              <label><input type="radio" name="q2" value="c">  Black</label>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>6. Which item should go in the hazardous waste bin?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Batteries</label><br>
+              <label><input type="radio" name="q2" value="b"> Food Scraps</label><br>
+              <label><input type="radio" name="q2" value="c"> Plastic Bottles</label>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>7. What does the recycling symbol with three arrows represent?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Reduce, Reuse, Recycle</label><br>
+              <label><input type="radio" name="q2" value="b"> Buy New Products</label><br>
+              <label><input type="radio" name="q2" value="c"> Throw Away Waste</label>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>8. Which of these is a renewable energy source?</strong></p>
+              <label><input type="radio" name="q2" value="a"> Solar Power</label><br>
+              <label><input type="radio" name="q2" value="b"> Coal</label><br>
+              <label><input type="radio" name="q2" value="c"> Natural Gas</label>
+            </div>
+
+              <div style="margin-bottom:1rem;">
+              <p><strong>9. What is the main purpose of composting?</strong></p>
+              <label><input type="radio" name="q2" value="a"> To reduce landfill waste</label><br>
+              <label><input type="radio" name="q2" value="b"> To create plastic</label><br>
+              <label><input type="radio" name="q2" value="c"> To burn waste</label>
+            </div>    
+
+            <div style="margin-bottom:1rem;">
+              <p><strong>10.Which type of waste is an apple core? </strong></p>
+              <label><input type="radio" name="q2" value="a">Dry Waste </label><br>
+              <label><input type="radio" name="q2" value="b"> Wet Waste</label><br>
+              <label><input type="radio" name="q2" value="c"> E-waste</label>
+            </div>  
+            <div style="margin-bottom:1rem;">
+              <p><strong>11. Which item should go in the hazardous waste bin?</strong></p>
+                <label><input type="radio" name="q5" value="a"> Banana Peel</label><br>
+                <label><input type="radio" name="q5" value="b"> Old Battery</label><br>
+                <label><input type="radio" name="q5" value="c"> Newspaper</label><br>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+                <p><strong>11. Which of the following can be composted?</strong></p>
+                          <label><input type="radio" name="q8" value="a"> Orange Peels</label><br>
+                          <label><input type="radio" name="q8" value="b"> Glass Jar</label><br>
+                          <label><input type="radio" name="q8" value="c"> Metal Wire</label><br>
+            </div>
+            <div style="margin-bottom:1rem;">
+      <p><strong>12. Recycling plastic reduces:</strong></p>
+          <label><input type="radio" name="q11" value="a"> Water Pollution</label><br>
+          <label><input type="radio" name="q11" value="b"> Land Pollution</label><br>
+          <label><input type="radio" name="q11" value="c"> All of the above</label>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+  <p><strong>13. Paper can be recycled up to how many times?</strong></p>
+  <label><input type="radio" name="q13" value="a"> 2–3</label><br>
+  <label><input type="radio" name="q13" value="b"> 5–7</label><br>
+  <label><input type="radio" name="q13" value="c"> 10–15</label><br>
+</div>
+
+<div style="margin-bottom:1rem;">
+  <p><strong>14. Which gas is produced if wet waste is not properly disposed?</strong></p>
+  <label><input type="radio" name="q14" value="a"> Oxygen</label><br>
+  <label><input type="radio" name="q14" value="b"> Methane</label><br>
+  <label><input type="radio" name="q14" value="c"> Nitrogen</label><br>
+  
+</div>
+
+<div style="margin-bottom:1rem;">
+  <p><strong>15. Which is the best way to manage food waste?</strong></p>
+  <label><input type="radio" name="q15" value="a"> Burning</label><br>
+  <label><input type="radio" name="q15" value="b"> Composting</label><br>
+  <label><input type="radio" name="q15" value="c"> Throwing in landfill</label><br>
+ 
+</div>
+<button type="button" class="btn btn-primary" onclick="submitQuiz()">
+              Submit Quiz
+            </button>
+            <p id="quiz-result" class="lead" style="margin-top:1rem;"></p>
+          </form>
+        </div>
+        <div class="copy">
+          <span class="eyebrow" aria-hidden="true">Shop Eco Products</span>
+          <h1 id="shop-title">Sustainable Living Made Easy</h1>
+          <p class="lead">
+            Explore our range of <strong>Eco-friendly Products</strong> like 
+            <strong>Biodegradable Dustbins</strong>, <strong>Compostable  Bags</strong>, and 
+            <strong>Reusable Items</strong> to reduce your environmental footprint.
+          </p>
+          <div class="actions" role="group" aria-label="Shop actions">
+            <a class="btn btn-primary" href="/shop.html">Shop Now</a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script>
+      function submitQuiz(){
+        let score = 0;
+        const q1 = document.querySelector('input[name="q1"]:checked');
+        const q2 = document.querySelector('input[name="q2"]:checked');
+        if(q1 && q1.value === 'b') score++;
+        if(q2 && q2.value === 'a') score++;
+
+        const result = document.getElementById('quiz-result');
+        if(!q1 || !q2){
+          result.textContent = "Please answer all questions!";
+          result.style.color = "orange";
+        } else {
+          result.textContent = `You scored ${score}/2 correct!`;
+          result.style.color = score === 2 ? "limegreen" : "var(--brand)";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Navigation Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="demo-wrap">
+      <nav class="bottom-nav" aria-label="Primary">
+<div class="logo">
+          <a href="#">
+            <img src="/logo.png" alt="logo" style="height: 60px;">
+          </a>
+        </div>
+
+        <a class="nav-item is-active" href="#" data-id="home" aria-current="page" style="margin-left: auto;">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5 10v10h5v-6h4v6h5V10"></path>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <a class="nav-item" href="#" data-id="notifications">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"></path>
+            <path d="M9 18a3 3 0 0 0 6 0"></path>
+          </svg>
+          <span>Notifications</span>
+        </a>
+
+        <!-- Language Nav Item -->
+        <div class="nav-item dropdown">
+          <a href="#" class="dropdown-toggle" data-id="language" style="text-decoration: none;">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 0 1 0-16Z"></path>
+              <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path>
+            </svg>
+            <span style="color: var(--muted);">Language</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="/profile.html" data-id="profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"></path>
+            <path d="M4 20a8 8 0 0 1 16 0"></path>
+          </svg>
+          <span>Profile</span>
+        </a>
+        <a class="nav-item" href="/training.html" data-id="training">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-2H6.5a.5.5 0 0 1 0-1H20v-2H6.5A2.5 2.5 0 0 0 4 19.5z"></path>
+            <path d="M20 2H7.5A2.5 2.5 0 0 0 5 4.5v11A2.5 2.5 0 0 0 7.5 18H20z"></path>
+          </svg>
+          <span>Training</span>
+        </a>
+      </nav>
+    </main>
+
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="copy">
+          <span class="eyebrow" aria-hidden="true">Training & Assessment</span>
+          <h1 id="hero-title">Training. Learn. Practice. Earn Your Certificate.</h1>
+          <p class="lead">
+            A modern, clean, and user-friendly experience for training and assessment.
+            Complete the training, ace the quiz, and download your personalized certificate.
+          </p>
+          <div class="actions" role="group" aria-label="Primary actions">
+            <a class="btn btn-primary" href="/training.html">Start Training</a>
+            <a class="btn btn-ghost" href="/quiz.html">Take Quiz</a>
+          </div>
+        </div>
+
+        <figure class="art-wrap">
+          <img class="art" src="/1.png" alt="Training Image" loading="lazy" decoding="async"/>
+        </figure>
+      </section>
+
+      <!-- ⭐ NEW MINI SHOP SECTION -->
+      <section class="hero" aria-labelledby="shop-title">
+        <div class="copy">
+          <span class="eyebrow" aria-hidden="true">Mini Shop</span>
+          <h1 id="shop-title">Eco-Friendly Essentials for a Greener Lifestyle</h1>
+          <p class="lead">
+            Shop sustainable products like <strong>Compost Kits</strong>, 
+            <strong>Dustbins</strong>, and <strong>Reusable Bags</strong> to reduce waste
+            and promote eco-friendly living.
+          </p>
+          <div class="actions" role="group" aria-label="Shop actions">
+            <a class="btn btn-primary" href="/shop.html" target="_blank">Shop Now</a>
+          </div>
+        </div>
+
+        <figure class="art-wrap">
+          <img class="art" src="/dustbin.avif" alt="Mini Shop" loading="lazy" decoding="async"/>
+        </figure>
+      </section>
+    </main>
+
+    <!-- ⭐ GAMIFIED CHALLENGES SECTION WITH BADGES -->
+<section class="hero" aria-labelledby="challenge-title">
+  <div class="copy" style="margin-left: 150px;">
+    <span class="eyebrow" aria-hidden="true">Gamified Challenges</span>
+    <h1 id="challenge-title">Play. Compete. Earn Points!</h1>
+    <p class="lead">
+      Take on weekly eco-friendly challenges and earn bonus points for your actions.
+    </p>
+
+    <ul class="lead" style="margin-bottom:1.5rem; list-style:disc; padding-left:1.2rem;">
+      <li><strong>Weekly Challenges</strong></li>
+      <li>Report <strong>3 Dumps This Week</strong> – 
+          <span style="color:var(--brand)">+50 Bonus Points</span></li>
+      <li>Compost Wet Waste at Home – 
+          <span style="color:var(--brand)">+100 Points</span> (Upload Proof)</li>
+    </ul>
+
+    <!-- 🌱 Impact -->
+    <p class="lead" style="margin-bottom:1.5rem;">
+      <strong>Impact:</strong> Earning badges keeps you active and engaged,
+      motivating consistent eco-friendly actions.
+    </p>
+
+    <div class="actions" role="group" aria-label="Challenge actions">
+      <a class="btn btn-primary" href="/quiz.html">Join Now</a>
+      <a class="btn btn-ghost" href="#upload-proof">Upload Proof</a>
+    </div>
+  </div>
+
+  <figure class="art-wrap">
+    <img class="art" src="/5.jpg" alt="Gamified Challenges" loading="lazy" decoding="async"/>
+  </figure>
+</section>
+
+<!-- 🎓 CERTIFICATE SECTION -->
+<section class="hero" aria-labelledby="certificate-title">
+  <div class="copy" style="margin-left: 150px;">
+    <span class="eyebrow" aria-hidden="true">Certificate</span>
+    <h1 id="certificate-title">Get Your Training Certificate</h1>
+    <p class="lead">
+      Completed the GreenDrop training?
+      Enter your name to instantly generate your personalized certificate and download it.
+    </p>
+
+<button class="btn btn-primary" onclick="generateCertIndex()"><a href="/certificate.html" style="text-decoration: none;">Generate Certificate</a></button>
+
+    <!-- Certificate Display -->
+    <div id="certAreaIndex"
+      style="display:none; margin-top:2rem; background:white; color:black; padding:2rem; border-radius:16px; max-width:600px;">
+      <h2 style="text-align:center; margin-bottom:1rem;">Certificate of Completion</h2>
+      <p style="text-align:center;">This is to certify that</p>
+      <h1 id="certNameIndex" style="text-align:center; color:#3b82f6; margin:1rem 0;"></h1>
+      <p style="text-align:center;">has successfully completed the <strong>GreenDrop Training Program</strong>.</p>
+      <p style="text-align:center; margin-top:2rem;">Date: <span id="certDateIndex"></span></p>
+      <p style="text-align:center;">🌱 GreenDrop Initiative</p>
+    </div>
+
+    <!-- Download Button -->
+    <div id="downloadBtnIndex" style="display:none; margin-top:1rem;">
+      <button class="btn btn-ghost" onclick="downloadCertIndex()">Download as Image</button>
+    </div>
+  </div>
+
+  <figure class="art-wrap">
+    <img class="art" src="/certi.png" alt="Certificate Illustration" loading="lazy" decoding="async"/>
+  </figure>
+</section>
+
+<!-- 🌿 FOOTER SECTION -->
+<footer class="footer">
+  <p class="footer-text">
+    © 2025 <strong class="brand">GreenDrop</strong>.
+    All rights reserved.
+  </p>
+
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="mailto:contact@greendrop.com">Contact</a>
+  </div>
+
+  <p class="footer-subtext">
+    🌱 Making a cleaner and greener future together.
+  </p>
+</footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

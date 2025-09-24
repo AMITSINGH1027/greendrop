@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eco-Friendly Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="demo-wrap">
+      <nav class="bottom-nav" aria-label="Primary">
+<div class="logo">
+          <a href="/index.html">
+            <img src="/logo.png" alt="logo" style="height: 60px;">
+          </a>
+        </div>
+
+        <a class="nav-item is-active" href="/index.html" data-id="home" aria-current="page" style="margin-left: auto;">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5 10v10h5v-6h4v6h5V10"></path>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <a class="nav-item" href="#" data-id="notifications">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"></path>
+            <path d="M9 18a3 3 0 0 0 6 0"></path>
+          </svg>
+          <span>Notifications</span>
+        </a>
+
+        <!-- Language Nav Item -->
+        <div class="nav-item dropdown">
+          <a href="#" class="dropdown-toggle" data-id="language" style="text-decoration: none;">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 0 1 0-16Z"></path>
+              <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path>
+            </svg>
+            <span style="color: var(--muted);">Language</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">Marathi</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="/profile.html" data-id="profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"></path>
+            <path d="M4 20a8 8 0 0 1 16 0"></path>
+          </svg>
+          <span>Profile</span>
+        </a>
+        <a class="nav-item" href="/training.html" data-id="training">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-2H6.5a.5.5 0 0 1 0-1H20v-2H6.5A2.5 2.5 0 0 0 4 19.5z"></path>
+            <path d="M20 2H7.5A2.5 2.5 0 0 0 5 4.5v11A2.5 2.5 0 0 0 7.5 18H20z"></path>
+          </svg>
+          <span>Training</span>
+        </a>
+      </nav>
+    </main>
+
+    <div class="shop-container">
+      <div class="shop-title">Eco-Friendly Essentials Shop</div>
+      <div class="shop-grid">
+        <div class="shop-item">
+          <img src="1.png" alt="Compost Kit" />
+          <h2 style="color: var(--muted);">Compost Kit</h2>
+          <p>Turn kitchen waste into rich compost for your garden. Includes bin, starter, and guide.</p>
+          <button class="buy-btn" onclick="alert('Compost Kit added to cart!')">Buy Now</button>
+        </div>
+        <div class="shop-item">
+          <img src="dustbin.avif" alt="Dustbin" />
+          <h2 style="color: var(--muted);">Dustbin</h2>
+          <p>Durable, eco-friendly dustbins for home and office. Separate wet and dry waste easily.</p>
+          <button class="buy-btn" onclick="alert('Dustbin added to cart!')">Buy Now</button>
+        </div>
+        <div class="shop-item">
+          <img src="/Reusable-bag.png" alt="Reusable Bag" />
+          <h2 style="color: var(--muted);">Reusable Bag</h2>
+          <p>Say goodbye to plastic! Carry groceries and essentials in style with our reusable bags.</p>
+          <button class="buy-btn" onclick="alert('Reusable Bag added to cart!')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

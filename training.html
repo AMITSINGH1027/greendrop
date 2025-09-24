@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Training Videos | GreenDrop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="demo-wrap">
+      <nav class="bottom-nav" aria-label="Primary">
+   <div class="logo">
+          <a href="/index.html">
+            <img src="/logo.png" alt="logo" style="height: 60px;">
+          </a>
+        </div>
+
+        <a class="nav-item is-active" href="/index.html" data-id="home" aria-current="page" style="margin-left: auto;">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5 10v10h5v-6h4v6h5V10"></path>
+          </svg>
+          <span>Home</span>
+        </a>
+    <a class="nav-item" href="#" data-id="notifications">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 9a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"></path>
+        <path d="M9 18a3 3 0 0 0 6 0"></path>
+      </svg>
+      <span>Notifications</span>
+    </a>
+
+    <div class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle" data-id="language" style="text-decoration: none;">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 0 1 0-16Z"></path>
+          <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path>
+        </svg>
+        <span style="color: var(--muted);">Language</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">Marathi</a></li>
+      </ul>
+    </div>
+    <a class="nav-item is-active" href="/profile.html" data-id="profile" >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"></path>
+        <path d="M4 20a8 8 0 0 1 16 0"></path>
+      </svg>
+      <span>Profile</span>
+    </a>
+    <a class="nav-item" href="#" data-id="training">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-2H6.5a.5.5 0 0 1 0-1H20v-2H6.5A2.5 2.5 0 0 0 4 19.5z"></path>
+        <path d="M20 2H7.5A2.5 2.5 0 0 0 5 4.5v11A2.5 2.5 0 0 0 7.5 18H20z"></path>
+      </svg>
+      <span>Training</span>
+    </a>
+  </nav>
+    </main>
+
+    <main class="container">
+
+      <section class="hero" aria-labelledby="videos-title">
+        <div class="copy">
+          <span class="eyebrow" aria-hidden="true">Video Tutorials</span>
+          <h2 id="videos-title">Watch & Learn</h2>
+          <div class="video-grid">
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/0UbzpjiJg8g" title="Eco-Friendly Living Tips" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">Eco-Friendly Living Tips</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/iPMSqMX-csA" title="How to Compost at Home" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">How to Compost at Home</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/yGb9nnOGryk" title="Reduce, Reuse, Recycle" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">Reduce, Reuse, Recycle</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/07ym6iZNMQU" title="waste Management" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">waste Management</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/8ufiQlrosCM" title="SUSTAINABLE WASTE SOLUTIONS" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">SUSTAINABLE WASTE SOLUTIONS</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/lNgAW4VRcKo" title="EcoBricks - A Solution To Plastic Pollution " frameborder="0" allowfullscreen></iframe>
+              <p class="lead">EcoBricks - A Solution To Plastic Pollution </p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+              <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/astag10OjGk" title="Zero Waste Colony" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">Zero Waste Colony</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/ufyLuCWeNco" title="convert Our Wrapper Waste into these Amazing things" frameborder="0" allowfullscreen></iframe>
+              <p class="lead">convert Our Wrapper Waste into these Amazing things</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+            <div class="video-item">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/tPwY8y9A6fA" title="convert your waste plastic bottles into clothes " frameborder="0" allowfullscreen></iframe>
+              <p class="lead">convert your waste plastic bottles into clothes</p>
+              <button class="complete-btn" onclick="markComplete(this)">Mark as Complete</button>
+            </div>
+
+          </div>
+          <div id="certBtnWrap" style="display:none; text-align:center; margin-top:2rem;">
+            <a href="/certificate.html" class="btn btn-primary" style="text-decoration: none;">Get Your Certificate</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function markComplete(btn) {
+        btn.textContent = currentLang === 'hi' ? 'पूर्ण हुआ!' : 'Completed!';
+        btn.disabled = true;
+        btn.classList.add('completed');
+        checkAllCompleted();
+      }
+
+      function checkAllCompleted() {
+        const btns = document.querySelectorAll('.complete-btn');
+        const allDone = Array.from(btns).every(btn => btn.classList.contains('completed'));
+        document.getElementById('certBtnWrap').style.display = allDone ? 'block' : 'none';
+      }
+
+      let currentLang = 'en';
+      const langMap = {
+        en: {
+          videoTutorials: 'Video Tutorials',
+          watchLearn: 'Watch & Learn',
+          ecoTips: 'Eco-Friendly Living Tips',
+          compost: 'How to Compost at Home',
+          recycle: 'Reduce, Reuse, Recycle',
+          markComplete: 'Mark as Complete',
+          getCert: 'Get Your Certificate',
+          footer: '© 2025 GreenDrop.  All rights reserved.',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+          contact: 'Contact',
+          subtext: '🌱 Making a cleaner and greener future together.'
+        },
+        hi: {
+          videoTutorials: 'वीडियो ट्यूटोरियल्स',
+          watchLearn: 'देखें और सीखें',
+          ecoTips: 'पर्यावरण-अनुकूल जीवनशैली टिप्स',
+          compost: 'घर पर कंपोस्ट कैसे करें',
+          recycle: 'कम करें, पुन: उपयोग करें, पुनर्चक्रण करें',
+          markComplete: 'पूर्ण करें',
+          getCert: 'अपना प्रमाणपत्र प्राप्त करें',
+          footer: '© 2025 ग्रीनड्रॉप. सभी अधिकार सुरक्षित.',
+          privacy: 'गोपनीयता नीति',
+          terms: 'सेवा की शर्तें',
+          contact: 'संपर्क करें',
+          subtext: '🌱 मिलकर स्वच्छ और हरित भविष्य बनाएं।'
+        }
+      };
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.querySelector('.eyebrow').textContent = langMap[lang].videoTutorials;
+        document.getElementById('videos-title').textContent = langMap[lang].watchLearn;
+        const leads = document.querySelectorAll('.video-item .lead');
+        leads[0].textContent = langMap[lang].ecoTips;
+        leads[1].textContent = langMap[lang].compost;
+        leads[2].textContent = langMap[lang].recycle;
+        const btns = document.querySelectorAll('.complete-btn');
+        btns.forEach(btn => {
+          btn.textContent = langMap[lang].markComplete;
+          btn.disabled = btn.classList.contains('completed');
+        });
+        // Update certificate button text
+        const certBtn = document.querySelector('#certBtnWrap .btn');
+        if(certBtn) certBtn.textContent = langMap[lang].getCert;
+        document.querySelector('.footer-text').innerHTML = langMap[lang].footer;
+        const links = document.querySelectorAll('.footer-links a');
+        links[0].textContent = langMap[lang].privacy;
+        links[1].textContent = langMap[lang].terms;
+        links[2].textContent = langMap[lang].contact;
+        document.querySelector('.footer-subtext').textContent = langMap[lang].subtext;
+      }
+
+      document.querySelectorAll('.dropdown-menu li a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (this.textContent === 'हिन्दी') {
+            setLanguage('hi');
+          } else if (this.textContent === 'English') {
+            setLanguage('en');
+          }
+        });
+      });
+    </script>
+    <footer class="footer">
+      <p class="footer-text">
+        © 2025 <strong class="brand">GreenDrop</strong>.  All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="mailto:contact@greendrop.com">Contact</a>
+      </div>
+      <p class="footer-subtext">
+        🌱 Making a cleaner and greener future together.
+      </p>
+    </footer>
+  </body>
+</html>
